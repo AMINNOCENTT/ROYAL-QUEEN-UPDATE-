@@ -118,20 +118,20 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         out = private_panel(_)
-        accha = await m.reply_text(
-            text=random.choice(EMOJIOS),
-        )
-        await asyncio.sleep(1.3)
-        await accha.edit("👻")
-        await asyncio.sleep(0.2)
-        await accha.edit("🌼")
-        await asyncio.sleep(0.2)
-        await accha.edit("🏵️")
-        await asyncio.sleep(0.2)
-        await accha.delete()
-        umm = await m.reply_sticker(sticker=random.choice(STICKER))
-        await asyncio.sleep(2)
-        await umm.delete()
+        if m.chat.type == ChatType.PRIVATE:
+        accha = await message.reply_text(text=random.choice(EMOJIOS))
+    await asyncio.sleep(1.3)
+    await accha.edit("👻")
+    await asyncio.sleep(0.2)
+    await accha.edit("🌼")
+    await asyncio.sleep(0.2)
+    await accha.edit("🏵️")
+    await asyncio.sleep(0.2)
+    await accha.delete()
+    
+    umm = await message.reply_sticker(sticker=random.choice(STICKER))
+    await asyncio.sleep(2)
+    await umm.delete()
         await message.reply_video(
             video="https://telegra.ph/file/ac573bda31359a8bb51a5.mp4",
             caption=_["start_2"].format(message.from_user.mention, app.mention),
