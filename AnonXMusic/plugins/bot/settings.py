@@ -57,8 +57,8 @@ async def gib_repo(client, CallbackQuery, _):
         InputMediaVideo("https://telegra.ph/file/3473a79595e79f3a494c0.mp4"),
         reply_markup=InlineKeyboardMarkup(
             [
-            [InlineKeyboardButton(text="ᴄʜᴀᴛᴛɪɴɢ ✨", url=f"https://t.me/Cherished_Community")],
-            [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper")],
+            [InlineKeyboardButton(text="ᴄʜᴀᴛᴛɪɴɢ ✨", url=f"https://t.me/friendship_forever_group143")],
+            [InlineKeyboardButton(text="➲ ʙᴀᴄᴋ✭", callback_data=f"settingsback_helper")],
             ]
         ),
     )
