@@ -72,7 +72,7 @@ def stream_markup_timer(_, chat_id, played, dur):
                 text="✭𝙶𝚁𝙾𝚄𝙿✭", url=f"https://t.me/friendship_forever_group143"
             ),
             InlineKeyboardButton(
-                text="✭ᴄʜᴀɴɴᴇʟ✭", url=f"https://t.me/manmarziiyaan"
+                text="✭ᴄʜᴀɴɴᴇʟ✭", url=f"https://t.me/khamosiyaaaan"
             ),
             InlineKeyboardButton(
                 text="✭ᴏᴡɴᴇʀ✭", url=f"https://t.me/InnocentIdkaaa"
